@@ -14,10 +14,31 @@ content.append(dogContent)
 let dogImage = document.createElement('img')
 dogImage.setAttribute('class', 'dog-image')
 dogImage.setAttribute('src', './assets/rizzo.jpg')
-content.append(dogImage)
+dogContent.append(dogImage)
 
 let dogDetails = document.createElement('div')
 dogDetails.setAttribute('class', 'dog-details')
-content.append(dogDetails)
+dogContent.append(dogDetails)
 
+let headerThree = document.createElement ('h3')
+headerThree.textContnet = 'Description'
+dogDetails.append(headerThree)
 
+let paragraph = document.createElement ('p')
+paragraph.textContnet = "This gentle dog is aloof toward her owner, and never comes when called. She always acts as though any stranger she meets will harm her, and dislikes other animals.";
+dogDetails.append(paragraph)
+
+let headerThreeTwo = document.createElement('h3');
+headerThreeTwo.textContent ='Feeding Times'
+dogDetails.append(headerThreeTwo)
+
+let ul = document.createElement('ul')
+
+let feedingTimes = ['9:00AM', '12:00pm', '5:00pm']
+
+for(let i=0; i < feedingTimes.length; i++) {
+    let li= document.createElement('li');
+    console.log(li, feedingTimes[i])
+    li.textContent= feedingTimes[i];
+    ul.append
+}
